@@ -14,7 +14,8 @@
     <p style="width: 100%" class="text-gray-600 text-lg md:text-right ">{{$comment->created_at}}</p>
 
     <!--    falta alinear el boton a la derecha -->
-    <!-- Si el comentario es del usuario logeado o el usuario logeado es un administrador, se muestra el boton para borrar el comentario. -->
+    <!-- Si el comentario es del usuario logeado o el usuario logeado es un administrador, se muestra el boton para borrar el comentario. ACTUALMENTE NO ESTA IMPLANTADO
+    EL ROL DE ADMINISTRADOR-->
     @if(Auth::user()->id == $comment->user->id || Auth::user()->role == 0)
         
             <form action="{{route('comment.delete')}}" method="post">

@@ -130,7 +130,10 @@ class UserController extends Controller
         return redirect()->route("dashboard");
     }
 
-
+    /**
+    * Devolvemos los posts creados por el usuario.
+    * @return array de objetos post
+    */
     public function startedPost(){
         $user_id = Auth::user()->id;
         $posts = Post::where('user_id', '=', $user_id)->paginate(10);
@@ -138,6 +141,11 @@ class UserController extends Controller
         return view('dashboard', compact('posts'));
     }
 
+    
+    /**
+    * Devolvemos los posts comentados por el usuario.
+    * @return array de objetos post
+    */
     public function commentPost(){
         $user = Auth::user();
         $posts = $user->commentsPosts()->distinct()->paginate(10);

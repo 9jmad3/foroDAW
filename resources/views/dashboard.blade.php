@@ -1,6 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
     <div class="flex justify-end">
+                <!-- Formulario para busqueda personalizada -->
                 <form method="GET" class="form-inline" action="{{ route('post.customindex') }}">
                     @csrf
                     <input name="buscarportitulo" class="mt-1 mb-1 form-control rounded-lg border border-purple-600 w-36 h-11" type="search" placeholder="titulo" aria-label="Search">
@@ -19,7 +20,7 @@
             </div>
         
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-
+            <!-- Precios de criptomonedas -->
             <div id="" class="flex flex-nowrap pb-3 ">
             <div class="bg-white rounded overflow-x-hidden flex snap-x h-auto">     
                 @isset($coins)
@@ -60,7 +61,7 @@
         <div class="max-w-10xl mx-auto sm:px-6 lg:px-8">  
                     <div class="container my-6 mx-auto px-4 md:px-12">
                       <!-- Paginación -->
-
+                        <!-- Mostramos los posts -->
                         <div class="flex justify-center flex-wrap -mx-1 lg:-mx-2">                                  
                             @isset($posts)
                                 @foreach ($posts as $post)

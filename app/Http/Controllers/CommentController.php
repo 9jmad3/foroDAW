@@ -55,7 +55,8 @@ class CommentController extends Controller
         $comment->save();
 
 
-        //ACTUALIZAMOS EL CAMPO UPDATED_AT PARA QUE EL POST APAREZCA AL INICIO.
+        //Actualizamos el campo updated_at de la tabla post para que se ponga al inicio
+        //de la página.
 
         $post = Post::find($post_id);
         $time = Carbon\Carbon::now();

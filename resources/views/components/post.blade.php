@@ -1,5 +1,5 @@
 <!-- component -->
-
+<!-- Post que se muestra en la página principal, en formato pequeño, solo título, usuarios y categoria -->
 <div class=" text-grey-200 w-full px-10 my-2 py-1 bg-white rounded-lg shadow-md">
     <div class="flex justify-between items-center">
         <div class="flex justify-between items-center">

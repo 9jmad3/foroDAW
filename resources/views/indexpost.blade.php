@@ -1,3 +1,4 @@
+<!-- VISTA PRINCIPAL DE UN POST DONDE CARGAMOS EL POST, LOS COMENTARIOS Y EL FORMULARIO PARA COMENTAR EN EL -->
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">

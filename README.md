@@ -12,6 +12,7 @@ Búsqueda personalizada por titulo y categoría en los posts.
 Filtrado por categorías.
 Filtrado por posts creados y comentados.
 Precios reales de las criptomonedas obtenidos mediante API externa.
+contraseña de los usuarios "aaaaaaaa"
 
 ### Pre-requisitos 📋
 

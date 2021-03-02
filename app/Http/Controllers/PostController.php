@@ -25,7 +25,7 @@ class PostController extends Controller
 
     /**
      * Busqueda de post personalizada
-     *
+     * Si el campo categoría es igual a 0 es porque quiere todos los posts independientemente de la categoria.
      * @return \Illuminate\Http\Response
      * @param  \Illuminate\Http\Request  $request
      */

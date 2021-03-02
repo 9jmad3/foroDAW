@@ -62,8 +62,9 @@ class User extends Authenticatable
    }
 
    /**
-   *
-   */
+   * @return array de objetos posts.
+   * Rescatamos los posts donde el usuarios ha comentado.
+    */
    public function commentsPosts(){
      return $this->belongsToMany(Post::class, 'comments', 'user_id', 'post_id');
    }
