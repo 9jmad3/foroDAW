@@ -8,6 +8,10 @@
     <div> 
         <div class="max-w-10xl mx-auto sm:px-6 lg:px-8">  
             <div class="container my-6 mx-auto px-4 md:px-12">
+
+            <!-- Validation Errors -->
+            <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
             <form action="{{route('post.store')}}" accept-charset="UTF-8" method="post">
             @csrf
                 <div class="bg-white rounded-lg p-3  flex flex-col justify-center items-center md:items-start shadow-lg mb-4">

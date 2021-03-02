@@ -6,8 +6,15 @@
         </h2>
     </x-slot>
     <div> 
+        
         <div class="max-w-10xl mx-auto sm:px-6 lg:px-8">  
+
+        
             <div class="container my-6 mx-auto px-4 md:px-12">
+
+            <!-- Validation Errors -->
+            <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
                 <!-- POST -->
                 <form action="{{route('post.update', ['post'=>$post])}}" accept-charset="UTF-8" method="post">
                 @csrf

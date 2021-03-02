@@ -1,5 +1,9 @@
 <x-app-layout>
     <x-slot name="header">
+
+    <!-- Validation Errors -->
+    <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
     <div class="flex justify-end">
                 <!-- Formulario para busqueda personalizada -->
                 <form method="GET" class="form-inline" action="{{ route('post.customindex') }}">

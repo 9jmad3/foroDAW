@@ -13,6 +13,7 @@
     <div> 
         <div class="max-w-10xl mx-auto sm:px-6 lg:px-8">  
             <div class="container my-6 mx-auto px-4 md:px-12">
+
                 <!-- POST -->
                     <div class="">
                         <div class="overflow-hidden shadow-md">
@@ -74,6 +75,9 @@
                     <!-- FIN COMENTARIOS -->
 
                         <section class="rounded-b-lg  mt-4 ">
+
+                        <!-- Validation Errors -->
+                        <x-auth-validation-errors class="mb-4" :errors="$errors" />
                         
                         <!-- CAJA COMENTARIO -->
                         <form action="{{route('comment.store')}}" accept-charset="UTF-8" method="post"><input type="hidden" >
